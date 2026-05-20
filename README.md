@@ -1,96 +1,68 @@
-# AgentVerse
+# AgentVerse 🌍
 
 **Learn AI Agents by building social impact projects.**
 
-Each episode teaches a different agent framework by solving a real-world problem. Same pattern, different tools — so you learn the *concept*, not just the code.
+One agent · One framework · One real-world problem
 
 By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://youtube.com/@explainpannu) · [Instagram](https://instagram.com/explainpannu)
 
 ---
 
-## The pattern
+## Demo
 
-Every agent follows 5 ingredients:
-
-```
-👀 Eyes    → Data source (API, sensors, datasets)
-🧠 Brain   → LLM (Gemini, GPT, Claude, Groq, Ollama)
-📝 Memory  → Context (history, preferences)
-⚙️ Loop    → Decision engine (ReAct, orchestration)
-📲 Action  → Output (alerts, advice, notifications)
-```
+![Agent thinking](./assets/terminal-demo.gif)
+![Chat UI](./assets/chat-demo.gif)
 
 ---
 
 ## Episodes
 
-| # | Agent | Problem | Framework | Status | Repo |
-|---|-------|---------|-----------|--------|------|
-| 00 | **BreezyBuddy** | Weather nudge | Pure Python + ReAct | ✅ Live | [sasilab/BreezyBuddy](https://github.com/sasilab/BreezyBuddy) |
-| 01 | **Tamil Meme Crew** | Pollution + weather → Tanglish roast | CrewAI | ✅ Live | [sasilab/AgentVerse-CrewAI-Tamil-Meme](https://github.com/sasilab/AgentVerse-CrewAI-Tamil-Meme) |
-| 02 | *Coming soon* | New problem | New framework | 🔜 Next | — |
+| | Agent | What it does | Framework | Repo |
+|---|-------|-------------|-----------|------|
+| 🌤️ | **BreezyBuddy** | Nudges you to go outside based on weather | Pure Python | [→ repo](https://github.com/sasilab/BreezyBuddy) |
+| 🎭 | **Tamil Meme Crew** | Roasts your city's weather + pollution in sarcastic Tanglish | CrewAI | [→ repo](https://github.com/sasilab/AgentVerse-CrewAI-Tamil-Meme) |
+
+🌐 **Shared frontend** — one PWA for all episodes → [AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)
 
 ---
-
-## Shared frontend
-
-One PWA frontend that works across all episodes. WhatsApp-style chat, push notifications, settings panel, BYOK.
-
-**→ [sasilab/AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)**
-
-```
-┌──────────────────────────────┐
-│    AgentVerse Frontend PWA    │  ← same for ALL episodes
-│  Chat UI + Push Notifications │
-│  POST /api/run {city: "..."}  │
-└──────────────┬───────────────┘
+      ┌─────────────────────┐
+      │   Frontend PWA 🌐    │
+      │  chat · notifications │
+      │  settings · BYOK     │
+      └────────┬────────────┘
+               │
+      POST /api/run {city}
                │
     ┌──────────┼──────────┐
-    ▼          ▼          ▼
- CrewAI    LangGraph    Google
- (EP01)    (EP02?)     ADK (EP03?)
-```
+    ▼                     ▼
+┌───────────┐        ┌───────────┐
+│ BreezyBuddy│        │ Tamil Meme │
+│  EP00 🌤️  │        │  EP01 🎭   │
+└───────────┘        └───────────┘
+...
+(new episodes plug in here)
 
 ---
 
-## What makes this different
+## Why this exists
 
-- **Social impact** — not another todo app. Each agent solves a real problem.
-- **Zero paid APIs for data** — all data from free, open APIs (Open-Meteo, etc.)
-- **BYOK (Bring Your Own Key)** — Groq (free), Gemini (free tier), OpenAI, or Ollama (local). Your choice.
-- **One frontend, many backends** — learn the framework, not the UI.
-- **Built live with Claude Code** — every episode is built from scratch in a terminal session.
+- Each agent solves a **real problem**, not a toy demo
+- **Zero paid APIs** for data — Open-Meteo, free and open
+- **BYOK** — Groq (free) / Gemini / OpenAI / Ollama
+- **One frontend, many backends** — learn the framework, not the UI
+- Every episode **built live with Claude Code**
 
 ---
 
-## Quick start
-
-Pick an episode, clone it, follow its README:
+## Get started
 
 ```bash
-# Episode 01: CrewAI Tamil Meme Crew
 git clone https://github.com/sasilab/AgentVerse-CrewAI-Tamil-Meme.git
-cd AgentVerse-CrewAI-Tamil-Meme
 # follow the README inside
-
-# The shared frontend (needed for the PWA)
-git clone https://github.com/sasilab/AgentVerse-Frontend.git
 ```
 
 ---
 
-## This project is open-ended
+MIT · [@explainpannu](https://instagram.com/explainpannu)
 
-- Frameworks list grows as new ones emerge
-- Problems list grows as new ideas come up
-- Nothing is locked — everything evolves
-
-**Want to see a specific framework or problem?** Open an issue or DM [@explainpannu](https://instagram.com/explainpannu).
-
----
-
-## License
-
-MIT — use it, learn from it, teach with it.
-
-> *"Don't just learn one framework. Learn the pattern. Then every framework is just syntax."*
+> *"Learn the pattern. Then every framework is just syntax."*
