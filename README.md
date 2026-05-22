@@ -25,7 +25,6 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
 
 🌐 **Shared frontend** — one PWA for all episodes → [AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)
 
----
 +---------------------------+
                     |      Frontend PWA          |
                     |   chat - notifications     |
@@ -39,12 +38,10 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
                v                  v                  v
         +-----------+      +-----------+      +-----------+
         | BreezyBuddy|      | Tamil Meme|      | Diet Agent|
-        |  EP11      |      |  EP012     |      |  EP013     |
+        |  EP00      |      |  EP01     |      |  EP02     |
         +-----------+      +-----------+      +-----------+
                               ...
                   (new episodes plug in here)
-
----
 
 ## Why this exists
 
