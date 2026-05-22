@@ -26,24 +26,23 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
 🌐 **Shared frontend** — one PWA for all episodes → [AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)
 
 ---
-┌───────────────────────────┐
-         │      Frontend PWA 🌐       │
-         │   chat · notifications     │
-         │   settings · BYOK          │
-         └─────────────┬─────────────┘
-                       │
-              POST /api/run {city}
-                       │
-      ┌────────────────┼────────────────┐
-      ▼                ▼                ▼
-┌───────────┐   ┌───────────┐   ┌───────────┐
-│ BreezyBuddy│   │ Tamil Meme│   │Diet Agent │
-│  EP00 🌤️   │   │  EP01 🎭  │   │  EP02 🥗  │
-└───────────┘   └───────────┘   └───────────┘
-                      ...
-          (new episodes plug in here)
-...
-(new episodes plug in here)
++---------------------------+
+                    |      Frontend PWA          |
+                    |   chat - notifications     |
+                    |   settings - BYOK          |
+                    +-------------+-------------+
+                                  |
+                       POST /api/run {city}
+                                  |
+               +------------------+------------------+
+               |                  |                  |
+               v                  v                  v
+        +-----------+      +-----------+      +-----------+
+        | BreezyBuddy|      | Tamil Meme|      | Diet Agent|
+        |  EP11      |      |  EP012     |      |  EP013     |
+        +-----------+      +-----------+      +-----------+
+                              ...
+                  (new episodes plug in here)
 
 ---
 
