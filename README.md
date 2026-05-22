@@ -25,7 +25,8 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
 
 🌐 **Shared frontend** — one PWA for all episodes → [AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)
 
-+---------------------------+
+```
+                    +---------------------------+
                     |      Frontend PWA          |
                     |   chat - notifications     |
                     |   settings - BYOK          |
@@ -42,6 +43,7 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
         +-----------+      +-----------+      +-----------+
                               ...
                   (new episodes plug in here)
+```
 
 ## Why this exists
 
