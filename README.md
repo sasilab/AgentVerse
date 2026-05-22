@@ -21,6 +21,7 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
 |---|-------|-------------|-----------|------|
 | 🌤️ | **BreezyBuddy** | Nudges you to go outside based on weather | Pure Python | [→ repo](https://github.com/sasilab/BreezyBuddy) |
 | 🎭 | **Tamil Meme Crew** | Roasts your city's weather + pollution in sarcastic Tanglish | CrewAI | [→ repo](https://github.com/sasilab/AgentVerse-CrewAI-Tamil-Meme) |
+| 🥗 | **Diet Memory Agent** | Personalized diet tips that learn your taste via 👍👎 feedback | LangGraph + Mem0 | [→ repo](https://github.com/sasilab/diet_memory_agent) |
 
 🌐 **Shared frontend** — one PWA for all episodes → [AgentVerse-Frontend](https://github.com/sasilab/AgentVerse-Frontend)
 
@@ -33,12 +34,12 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
                │
       POST /api/run {city}
                │
-    ┌──────────┼──────────┐
-    ▼                     ▼
-┌───────────┐        ┌───────────┐
-│ BreezyBuddy│        │ Tamil Meme │
-│  EP00 🌤️  │        │  EP01 🎭   │
-└───────────┘        └───────────┘
+┌──────────┼──────────────────────┐
+        ▼          ▼                      ▼
+  ┌───────────┐ ┌───────────┐      ┌───────────┐
+  │ BreezyBuddy│ │ Tamil Meme │      │ Diet Agent │
+  │  EP00 🌤️  │ │  EP01 🎭   │      │  EP02 🥗   │
+  └───────────┘ └───────────┘      └───────────┘
 ...
 (new episodes plug in here)
 
