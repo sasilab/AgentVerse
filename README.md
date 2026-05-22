@@ -39,7 +39,7 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
                v                  v                  v
         +-----------+      +-----------+      +-----------+
         | BreezyBuddy|      | Tamil Meme|      | Diet Agent|
-        |  EP00      |      |  EP01     |      |  EP02     |
+        |  EP11      |      |  EP12     |      |  EP13     |
         +-----------+      +-----------+      +-----------+
                               ...
                   (new episodes plug in here)
