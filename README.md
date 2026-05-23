@@ -34,13 +34,13 @@ By [@explainpannu](https://instagram.com/explainpannu) · [YouTube](https://yout
                                   |
                        POST /api/run {city}
                                   |
-               +------------------+------------------+
-               |                  |                  |
-               v                  v                  v
-        +-----------+      +-----------+      +-----------+
-        | BreezyBuddy|      | Tamil Meme|      | Diet Agent|
-        |  EP11      |      |  EP12     |      |  EP13     |
-        +-----------+      +-----------+      +-----------+
+               +------------------+------------------+------------------+
+               |                  |                  |                  |
+               v                  v                  v                  v
+        +-----------+      +-----------+      +-----------+      +-----------+
+        | BreezyBuddy|      | Tamil Meme|      | Diet Agent|      | PDF RAG   |
+        |  EP00      |      |  EP01     |      |  EP02     |      |  EP03     |
+        +-----------+      +-----------+      +-----------+      +-----------+
                               ...
                   (new episodes plug in here)
 ```
